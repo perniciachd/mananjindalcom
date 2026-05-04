@@ -1,0 +1,30 @@
+---
+title: "How I Discovered My RAG Was Wrong 29% of the Time — the production version"
+description: "The full eval framework, failure modes, fix, and architecture behind a real production RAG system. The deep version of my Medium piece."
+date: "2026-05-04"
+tags: ["rag", "evals", "production"]
+mediumUrl: "https://medium.com/@manan_jindal"
+githubUrl: "https://github.com/pmananjindal/ai"
+readingTime: "12 min read"
+draft: false
+---
+
+> **TL;DR.** I shipped a RAG system that looked great in demos. When I built a 23-question golden set, it was wrong **29% of the time**. This is the eval framework I built, the failure modes I found, the fixes that moved the needle, and the architecture I now run by default. The short version is on [Medium](https://medium.com/@manan_jindal); this page has the production wiring, code, and numbers.
+
+## Why this article exists
+
+This is the **deep, production-grade companion** to the Medium piece *"How I Discovered My RAG Was Wrong 29% of the Time."*
+
+The Medium version tells the story. This page is the field report:
+
+- The exact eval harness (RAGAS + LLM-as-judge + a custom faithfulness check).
+- The 5 failure modes I found and how I categorized them.
+- The 4 fixes ranked by quality lift per hour of engineering.
+- The architecture I now run, including ADRs and cost model.
+- The CI gate that stops regressions before they reach `main`.
+
+> **TODO:** flesh this out with the real eval table, code blocks, and architecture diagram during Phase 0 Day -2/-1.
+
+## Working with me on this
+
+If your team is staring at a RAG system you can't quite trust, this is exactly what I do in a 1-week Architecture Review or a 2-week Production Readiness Sprint. → [See the consulting packages](/consulting).
