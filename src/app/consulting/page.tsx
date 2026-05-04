@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { JsonLd } from "@/components/site/JsonLd";
+import { CalInline } from "@/components/site/CalInline";
 import { serviceJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -100,19 +101,20 @@ export default function ConsultingPage() {
       </section>
 
       {/* Booking */}
-      <section id="book" className="mt-16 sm:mt-20 rounded-2xl border bg-muted/40 p-6 sm:p-10 text-center scroll-mt-20">
-        <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">Book a free 30-min architecture call</h2>
-        <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
-          Tell me what you&apos;re building and what&apos;s blocking you. If we&apos;re a fit, I&apos;ll send a scoped proposal within 48 hours. If we&apos;re not, I&apos;ll point you at someone who is.
-        </p>
-        <Button asChild size="lg" className="mt-6 w-full sm:w-auto">
-          <a href="https://cal.com/mananjindal/discovery" target="_blank" rel="noreferrer">
-            Open Cal.com &rarr;
-          </a>
-        </Button>
-        <p className="mt-3 text-xs text-muted-foreground">
-          (Cal.com inline embed will replace this button once you set up your event.)
-        </p>
+      <section id="book" className="mt-16 sm:mt-20 scroll-mt-20">
+        <div className="rounded-2xl border bg-muted/40 p-6 sm:p-10 text-center mb-6">
+          <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+            Book a free 30-min architecture call
+          </h2>
+          <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
+            Tell me what you&apos;re building and what&apos;s blocking you. If
+            we&apos;re a fit, I&apos;ll send a scoped proposal within 48 hours.
+            If we&apos;re not, I&apos;ll point you at someone who is.
+          </p>
+        </div>
+        <div className="rounded-2xl border bg-card overflow-hidden">
+          <CalInline event="discovery" height={760} />
+        </div>
       </section>
 
       <JsonLd data={serviceJsonLd({

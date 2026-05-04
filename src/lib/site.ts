@@ -18,6 +18,12 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/mananjindal",
     cal: "https://cal.com/mananjindal/discovery",
   },
+  cal: {
+    username: "mananjindal",
+    discovery: "discovery", // 30-min consulting discovery call
+    training: "training", // training discussion call
+    brandColor: "#2563EB",
+  },
   nav: [
     { href: "/articles", label: "Articles" },
     { href: "/consulting", label: "Consulting" },

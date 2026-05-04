@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { CalPopupButton } from "@/components/site/CalPopupButton";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -21,9 +22,7 @@ export default function ContactPage() {
           <p className="text-sm text-muted-foreground mb-4">
             30-min discovery call. Free. No pitch, no follow-up spam.
           </p>
-          <Button asChild>
-            <a href={site.social.cal} target="_blank" rel="noreferrer">Open Cal.com</a>
-          </Button>
+          <CalPopupButton event="discovery">Open booking</CalPopupButton>
         </div>
         <div className="rounded-lg border p-6">
           <h2 className="font-semibold mb-2">Email</h2>
