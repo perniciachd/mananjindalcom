@@ -23,7 +23,7 @@ export function Header() {
             </Link>
           ))}
           <Button asChild size="sm" className="ml-2">
-            <Link href="/consulting#book">Book a call</Link>
+            <Link href="/consulting#book">Fix my AI &rarr;</Link>
           </Button>
         </nav>
 

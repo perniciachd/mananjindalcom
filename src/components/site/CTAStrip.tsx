@@ -2,9 +2,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export function CTAStrip({
-  title = "Working on RAG or agents in production?",
-  subtitle = "Book a free 30-min call. I'll diagnose the biggest risk in your current architecture in 30 minutes flat. No pitch, no follow-up spam.",
-  ctaLabel = "Book the call →",
+  title = "Your AI works in the demo. Does it survive production?",
+  subtitle = "Free 30-min diagnostic call. I'll pinpoint the biggest risk in your current AI architecture and tell you exactly what to fix first. No pitch, no follow-up spam.",
+  ctaLabel = "Diagnose my AI system →",
   ctaHref = "/consulting#book",
 }: {
   title?: string;
