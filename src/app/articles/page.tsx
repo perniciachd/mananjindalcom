@@ -12,8 +12,8 @@ export default function ArticlesPage() {
   const articles = getAllArticles();
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16">
-      <h1 className="text-4xl font-semibold tracking-tight">Articles</h1>
+    <div className="mx-auto max-w-3xl px-4 sm:px-6 py-12 sm:py-16">
+      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">Articles</h1>
       <p className="mt-4 text-muted-foreground max-w-2xl">
         Long-form, production-focused deep-dives on RAG, agents, and AI architecture.
         The companion pieces to my{" "}

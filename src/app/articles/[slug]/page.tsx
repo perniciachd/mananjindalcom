@@ -47,7 +47,7 @@ export default async function ArticlePage({
   const { default: MDXContent } = await import(`@/../content/articles/${slug}.mdx`);
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-16">
+    <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 sm:py-16">
       <header className="mb-10">
         <p className="text-xs text-muted-foreground mb-2">
           {new Date(article.date).toLocaleDateString("en-IN", {
@@ -55,10 +55,10 @@ export default async function ArticlePage({
           })}
           {article.readingTime && <> &middot; {article.readingTime}</>}
         </p>
-        <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight">
           {article.title}
         </h1>
-        <p className="mt-4 text-lg text-muted-foreground">{article.description}</p>
+        <p className="mt-4 text-base sm:text-lg text-muted-foreground">{article.description}</p>
         {article.mediumUrl && (
           <div className="mt-6 rounded-lg border bg-muted/40 px-4 py-3 text-sm">
             <span className="text-muted-foreground">If you read the short version on Medium, this is the production version. </span>

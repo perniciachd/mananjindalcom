@@ -13,24 +13,24 @@ export const metadata: Metadata = {
 
 export default function ConsultingPage() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-16">
-      <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight">
+    <div className="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight">
         AI systems that survive production.
       </h1>
-      <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
+      <p className="mt-4 text-base sm:text-lg text-muted-foreground max-w-2xl">
         I help engineering teams ship RAG, agents, and LLM features that work
         in the real world &mdash; not just in demos. 15+ years building
         production systems. Trained 3,000+ engineers. Fixed a live RAG that was
         wrong 29% of the time.
       </p>
-      <Button asChild size="lg" className="mt-8">
+      <Button asChild size="lg" className="mt-8 w-full sm:w-auto">
         <Link href="#book">Book a free 30-min call &rarr;</Link>
       </Button>
 
       {/* Anti-promises */}
-      <section className="mt-20">
-        <h2 className="text-2xl font-semibold tracking-tight mb-6">What I won&apos;t do</h2>
-        <div className="grid gap-4 md:grid-cols-3">
+      <section className="mt-16 sm:mt-20">
+        <h2 className="text-xl sm:text-2xl font-semibold tracking-tight mb-6">What I won&apos;t do</h2>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
             { t: "I won't sell you a model", d: "No vendor pitches, no commissions. I help you pick what fits your stack and constraints." },
             { t: "I won't write your prompts", d: "Prompt engineering is a subset of the work, not the work. We design the system around it." },
@@ -45,9 +45,9 @@ export default function ConsultingPage() {
       </section>
 
       {/* Packages */}
-      <section className="mt-20">
-        <h2 className="text-2xl font-semibold tracking-tight mb-6">Packages</h2>
-        <div className="grid gap-4 md:grid-cols-3">
+      <section className="mt-16 sm:mt-20">
+        <h2 className="text-xl sm:text-2xl font-semibold tracking-tight mb-6">Packages</h2>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Card>
             <CardHeader>
               <CardTitle>Architecture Review</CardTitle>
@@ -100,12 +100,12 @@ export default function ConsultingPage() {
       </section>
 
       {/* Booking */}
-      <section id="book" className="mt-20 rounded-2xl border bg-muted/40 p-8 sm:p-10 text-center scroll-mt-20">
-        <h2 className="text-2xl font-semibold tracking-tight">Book a free 30-min architecture call</h2>
+      <section id="book" className="mt-16 sm:mt-20 rounded-2xl border bg-muted/40 p-6 sm:p-10 text-center scroll-mt-20">
+        <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">Book a free 30-min architecture call</h2>
         <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
           Tell me what you&apos;re building and what&apos;s blocking you. If we&apos;re a fit, I&apos;ll send a scoped proposal within 48 hours. If we&apos;re not, I&apos;ll point you at someone who is.
         </p>
-        <Button asChild size="lg" className="mt-6">
+        <Button asChild size="lg" className="mt-6 w-full sm:w-auto">
           <a href="https://cal.com/mananjindal/discovery" target="_blank" rel="noreferrer">
             Open Cal.com &rarr;
           </a>

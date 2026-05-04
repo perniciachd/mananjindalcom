@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16">
-      <h1 className="text-4xl font-semibold tracking-tight">Get in touch</h1>
+    <div className="mx-auto max-w-3xl px-4 sm:px-6 py-12 sm:py-16">
+      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">Get in touch</h1>
       <p className="mt-4 text-muted-foreground">
         Easiest way to talk: book a 30-min call. For everything else, email works.
       </p>
-      <div className="mt-8 grid gap-4 md:grid-cols-2">
+      <div className="mt-8 grid gap-4 sm:grid-cols-2">
         <div className="rounded-lg border p-6">
           <h2 className="font-semibold mb-2">Book a call</h2>
           <p className="text-sm text-muted-foreground mb-4">

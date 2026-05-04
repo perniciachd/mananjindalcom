@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 export function Footer() {
   return (
     <footer className="border-t border-border/60 mt-24">
-      <div className="mx-auto max-w-5xl px-4 py-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-sm">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 py-10 sm:py-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-sm">
         <div>
           <p className="font-semibold mb-2">{site.name}</p>
           <p className="text-muted-foreground">
@@ -41,7 +41,7 @@ export function Footer() {
           </Link>
         </div>
       </div>
-      <div className="mx-auto max-w-5xl px-4 py-6 border-t border-border/60 text-xs text-muted-foreground flex flex-col sm:flex-row justify-between gap-2">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 py-6 border-t border-border/60 text-xs text-muted-foreground flex flex-col sm:flex-row justify-between gap-2">
         <p>&copy; {new Date().getFullYear()} {site.name}. All rights reserved.</p>
         <p>Built with Next.js &middot; Hosted on Vercel</p>
       </div>

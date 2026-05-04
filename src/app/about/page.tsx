@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16">
-      <h1 className="text-4xl font-semibold tracking-tight">About</h1>
-      <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+    <div className="mx-auto max-w-3xl px-4 sm:px-6 py-12 sm:py-16">
+      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">About</h1>
+      <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
         I&apos;m Manan. I&apos;ve spent 15+ years building production systems
         across React, Java, Python, Node.js, and AWS &mdash; at Infosys, Spice
         Digital (UMANG, India&apos;s largest gov-tech platform), Hitachi, and

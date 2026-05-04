@@ -38,22 +38,22 @@ const programs = [
 
 export default function TrainingPage() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-16">
-      <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight">
+    <div className="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight">
         Production AI training that engineers actually rate 4.8+/5.
       </h1>
-      <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
+      <p className="mt-4 text-base sm:text-lg text-muted-foreground max-w-2xl">
         Hands-on programs for engineering teams stepping into RAG, agents, and
         AI systems. 3,000+ engineers trained at Cisco, Capgemini, Brillio,
         Genpact, GlobalLogic, Oman Airports, and PepsiCo.
       </p>
-      <Button asChild size="lg" className="mt-8">
+      <Button asChild size="lg" className="mt-8 w-full sm:w-auto">
         <Link href="/contact">Talk about training &rarr;</Link>
       </Button>
 
-      <section className="mt-16">
-        <h2 className="text-2xl font-semibold tracking-tight mb-6">Programs</h2>
-        <div className="grid gap-4 md:grid-cols-2">
+      <section className="mt-12 sm:mt-16">
+        <h2 className="text-xl sm:text-2xl font-semibold tracking-tight mb-6">Programs</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
           {programs.map((p) => (
             <Card key={p.title}>
               <CardHeader>
@@ -68,8 +68,8 @@ export default function TrainingPage() {
         </div>
       </section>
 
-      <section className="mt-16">
-        <h2 className="text-2xl font-semibold tracking-tight mb-4">Format &amp; pricing</h2>
+      <section className="mt-12 sm:mt-16">
+        <h2 className="text-xl sm:text-2xl font-semibold tracking-tight mb-4">Format &amp; pricing</h2>
         <ul className="text-sm text-muted-foreground space-y-2">
           <li>&bull; In-house workshops (in-person India, remote elsewhere).</li>
           <li>&bull; ₹1,50,000 – ₹4,00,000 per 2-day program (in-house).</li>
@@ -78,12 +78,12 @@ export default function TrainingPage() {
         </ul>
       </section>
 
-      <section className="mt-16 rounded-2xl border bg-muted/40 p-8 sm:p-10 text-center">
-        <h2 className="text-2xl font-semibold tracking-tight">Discuss a training for your team</h2>
+      <section className="mt-12 sm:mt-16 rounded-2xl border bg-muted/40 p-6 sm:p-10 text-center">
+        <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">Discuss a training for your team</h2>
         <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
           Tell me your team&apos;s starting point and what you want them to ship after. I&apos;ll send a 1-page proposal with curriculum and dates.
         </p>
-        <Button asChild size="lg" className="mt-6">
+        <Button asChild size="lg" className="mt-6 w-full sm:w-auto">
           <a href="https://cal.com/mananjindal/training" target="_blank" rel="noreferrer">
             Book a training call &rarr;
           </a>
