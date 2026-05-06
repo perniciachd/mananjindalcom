@@ -31,13 +31,15 @@ export function ConsultingHero() {
             Strategic AI consulting for enterprises ready to move beyond pilots and build
             production-grade AI systems that deliver measurable business outcomes.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="https://cal.com/mananjindal/training"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
           >
             Schedule Discovery Call
             <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
-          </Link>
+          </a>
         </motion.div>
       </div>
     </section>

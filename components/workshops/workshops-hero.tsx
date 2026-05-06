@@ -34,13 +34,15 @@ export function WorkshopsHero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
-            <Link
-              href="/contact"
+            <a
+              href="https://cal.com/mananjindal/training"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
             >
               Request Speaking Engagement
               <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
-            </Link>
+            </a>
           </div>
 
           <div className="flex flex-wrap gap-8">

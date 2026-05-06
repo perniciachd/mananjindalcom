@@ -102,13 +102,15 @@ export function FlagshipProgram() {
         </div>
 
         <div className="text-center">
-          <Link
-            href="/contact"
+          <a
+            href="https://cal.com/mananjindal/training"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-ai-blue text-white font-semibold rounded-md text-sm hover:bg-ai-blue/90 transition-colors group"
           >
             Request Program Details
             <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
-          </Link>
+          </a>
         </div>
       </div>
     </section>

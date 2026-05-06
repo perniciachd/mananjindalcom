@@ -120,12 +120,14 @@ export function TrainingsList() {
                       {t.tag}
                     </span>
                   </div>
-                  <Link
-                    href="/contact"
+                  <a
+                    href="https://cal.com/mananjindal/training"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-1 text-xs text-ai-blue font-medium opacity-0 group-hover:opacity-100 transition-opacity"
                   >
                     Inquire <ArrowRight size={12} />
-                  </Link>
+                  </a>
                 </div>
 
                 <p className="text-sm text-muted-foreground leading-relaxed mb-6">

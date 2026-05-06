@@ -95,13 +95,15 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4 mb-20"
         >
-          <Link
-            href="/contact"
+          <a
+            href="https://cal.com/mananjindal/training"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
           >
             Book Corporate Training
             <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
-          </Link>
+          </a>
           <a
             href="https://cal.com/mananjindal/training"
             target="_blank"

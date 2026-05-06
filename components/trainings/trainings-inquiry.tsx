@@ -26,16 +26,18 @@ export function TrainingsInquiry() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-            <Link
-              href="/contact"
+            <a
+              href="https://cal.com/mananjindal/training"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
             >
               <Mail size={16} />
               Send Training Inquiry
               <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
-            </Link>
+            </a>
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/919501565955"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground font-medium rounded-md text-sm hover:bg-secondary transition-colors"

@@ -114,13 +114,15 @@ export function EngagementModel() {
         </div>
 
         <div className="mt-12 text-center">
-          <Link
-            href="/contact"
+          <a
+            href="https://cal.com/mananjindal/training"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-ai-blue text-white font-semibold rounded-md text-sm hover:bg-ai-blue/90 transition-colors group"
           >
             Schedule Discovery Call
             <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
-          </Link>
+          </a>
         </div>
       </div>
     </section>
