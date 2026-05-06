@@ -41,7 +41,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/mananjindal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-ai-blue transition-colors"
@@ -50,7 +50,7 @@ export function Footer() {
                 <Linkedin size={18} />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://twitter.com/MananJindal18"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-ai-blue transition-colors"

@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: 'Manan Jindal — Enterprise GenAI Architect',
     description:
       'Helping enterprises build production-grade AI systems using Generative AI, RAG, and Multi-Agent Architectures.',
-    creator: '@mananjindal',
+    creator: '@MananJindal18',
   },
   robots: {
     index: true,
@@ -88,7 +88,8 @@ export default function RootLayout({
     image: 'https://mananjindal.com/placeholder-user.jpg',
     sameAs: [
       'https://linkedin.com/in/mananjindal',
-      'https://twitter.com/mananjindal',
+      'https://twitter.com/MananJindal18',
+      'https://medium.com/@manan_jindal',
     ],
     knowsAbout: [
       'Generative AI',

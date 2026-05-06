@@ -50,7 +50,7 @@ export function AboutHero() {
 
             <div className="flex items-center gap-4">
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/mananjindal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 border border-border rounded-md text-sm text-muted-foreground hover:text-foreground hover:border-ai-blue/50 transition-colors"
@@ -58,7 +58,7 @@ export function AboutHero() {
                 <Linkedin size={14} /> LinkedIn
               </a>
               <a
-                href="https://twitter.com"
+                href="https://twitter.com/MananJindal18"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 border border-border rounded-md text-sm text-muted-foreground hover:text-foreground hover:border-ai-blue/50 transition-colors"

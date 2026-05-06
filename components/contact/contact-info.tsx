@@ -55,7 +55,7 @@ export function ContactInfo() {
         </h3>
         <div className="flex gap-4">
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/mananjindal"
             target="_blank"
             rel="noopener noreferrer"
             className="text-secondary hover:text-accent transition-colors"
@@ -64,7 +64,7 @@ export function ContactInfo() {
             LinkedIn
           </a>
           <a
-            href="https://twitter.com"
+            href="https://twitter.com/MananJindal18"
             target="_blank"
             rel="noopener noreferrer"
             className="text-secondary hover:text-accent transition-colors"
