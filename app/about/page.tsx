@@ -1,9 +1,9 @@
 import { Nav } from '@/components/nav'
 import { Footer } from '@/components/footer'
 import { AboutHero } from '@/components/about/about-hero'
-import { AboutPhilosophy } from '@/components/about/about-philosophy'
-import { AboutSpecializations } from '@/components/about/about-specializations'
-import { AboutTimeline } from '@/components/about/about-timeline'
+import { Philosophy } from '@/components/about/philosophy'
+import { Specializations } from '@/components/about/specializations'
+import { Timeline } from '@/components/about/timeline'
 
 export const metadata = {
   title: 'About | Manan Jindal - Enterprise GenAI Architect',
