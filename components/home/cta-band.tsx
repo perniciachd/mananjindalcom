@@ -34,14 +34,16 @@ export function CTABand() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
+            <a
+              href="https://cal.com/mananjindal/training"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
             >
               <Calendar size={16} />
               Schedule AI Strategy Call
               <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
-            </Link>
+            </a>
             <a
               href="https://wa.me/91XXXXXXXXXX"
               target="_blank"

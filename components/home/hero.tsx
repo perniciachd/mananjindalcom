@@ -102,13 +102,15 @@ export function Hero() {
             Book Corporate Training
             <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
           </Link>
-          <Link
-            href="/contact"
+          <a
+            href="https://cal.com/mananjindal/training"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-border text-foreground font-medium rounded-md text-sm hover:bg-secondary transition-colors group"
           >
             Schedule AI Strategy Call
             <ChevronRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
-          </Link>
+          </a>
           <Link
             href="/trainings"
             className="inline-flex items-center gap-2 px-6 py-3 text-ai-blue font-medium text-sm hover:text-ai-blue/80 transition-colors group"
