@@ -6,9 +6,23 @@ import { RAGDiagram } from '@/components/architecture/rag-diagram'
 import { AgentDiagram } from '@/components/architecture/agent-diagram'
 
 export const metadata = {
-  title: 'GenAI Architecture — Manan Jindal | Enterprise RAG & Multi-Agent Systems',
-  description:
-    'Enterprise GenAI architecture patterns: RAG systems, multi-agent frameworks, LLMOps, AI safety, and scalable AI infrastructure.',
+  title: 'GenAI Architecture | RAG Systems & Multi-Agent Architectures',
+  description: 'Enterprise GenAI architecture expertise by Manan Jindal. RAG systems, multi-agent architectures, LLMOps, and production AI engineering for enterprise applications.',
+  keywords: [
+    'GenAI Architecture',
+    'RAG Systems Architecture',
+    'Multi-Agent Architecture',
+    'Enterprise AI Architecture',
+    'LLMOps Architecture',
+    'Production AI Systems',
+    'AI System Design',
+    'Scalable AI Architecture',
+  ],
+  openGraph: {
+    title: 'GenAI Architecture | RAG Systems & Multi-Agent Architectures',
+    description: 'Enterprise GenAI architecture expertise. RAG systems, multi-agent architectures, LLMOps, and production AI engineering.',
+    url: 'https://mananjindal.com/architecture',
+  },
 }
 
 export default function ArchitecturePage() {
