@@ -65,12 +65,14 @@ export function AboutHero() {
               >
                 <Twitter size={14} /> Twitter
               </a>
-              <Link
-                href="/contact"
+              <a
+                href="https://cal.com/mananjindal/training"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-4 py-2 bg-ai-blue text-white rounded-md text-sm font-medium hover:bg-ai-blue/90 transition-colors"
               >
                 Book a Call
-              </Link>
+              </a>
             </div>
           </motion.div>
 

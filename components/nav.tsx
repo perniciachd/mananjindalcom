@@ -75,12 +75,14 @@ export function Nav() {
 
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
-            <Link
-              href="/contact"
+            <a
+              href="https://cal.com/mananjindal/training"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-4 py-2 text-sm bg-ai-blue text-white rounded-md font-medium hover:bg-ai-blue/90 transition-colors"
             >
               Book a Call
-            </Link>
+            </a>
           </div>
 
           {/* Mobile toggle */}
@@ -120,12 +122,14 @@ export function Nav() {
                 </Link>
               ))}
               <div className="pt-4 border-t border-border">
-                <Link
-                  href="/contact"
+                <a
+                  href="https://cal.com/mananjindal/training"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full px-4 py-3 text-sm bg-ai-blue text-white rounded-md font-medium text-center"
                 >
                   Book a Consultation Call
-                </Link>
+                </a>
               </div>
             </div>
           </motion.div>
