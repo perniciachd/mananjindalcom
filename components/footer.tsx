@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Linkedin, Twitter, Mail, ExternalLink } from 'lucide-react'
+import { Linkedin, Twitter, Mail, ExternalLink, FileText } from 'lucide-react'
 
 const footerLinks = {
   Services: [
@@ -59,13 +59,13 @@ export function Footer() {
                 <Twitter size={18} />
               </a>
               <a
-                href="https://medium.com"
+                href="https://medium.com/@manan_jindal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-ai-blue transition-colors"
                 aria-label="Medium"
               >
-                <ExternalLink size={18} />
+                <FileText size={18} />
               </a>
               <a
                 href="mailto:manan.jindal@gmail.com"
