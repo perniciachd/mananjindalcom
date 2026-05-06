@@ -45,7 +45,7 @@ export function CTABand() {
               <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/919501565955"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 border border-border text-foreground font-medium rounded-md text-sm hover:bg-secondary transition-colors group"
