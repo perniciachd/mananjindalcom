@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -75,6 +76,7 @@ export function Nav() {
 
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
+            <ThemeToggle />
             <a
               href="https://cal.com/mananjindal/training"
               target="_blank"
@@ -86,13 +88,16 @@ export function Nav() {
           </div>
 
           {/* Mobile toggle */}
-          <button
-            className="lg:hidden text-muted-foreground hover:text-foreground p-2"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
+          <div className="lg:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              className="text-muted-foreground hover:text-foreground p-2"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
         </nav>
       </header>
 

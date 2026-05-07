@@ -6,9 +6,26 @@ import { ArticleGrid } from '@/components/insights/article-grid'
 import { NewsletterSignup } from '@/components/insights/newsletter-signup'
 
 export const metadata = {
-  title: 'AI Insights & Articles — Manan Jindal',
+  title: 'Enterprise AI & Engineering Insights — Manan Jindal',
   description:
-    'Enterprise AI insights, GenAI architecture deep-dives, and AI engineering tutorials. Thought leadership on RAG, multi-agent systems, LLMOps, and enterprise AI adoption.',
+    'Enterprise AI insights, AI architecture deep-dives, engineering leadership, cloud architecture, and technology transformation. Thought leadership on RAG, multi-agent systems, full-stack architecture, and enterprise engineering.',
+  keywords: [
+    'Enterprise AI',
+    'AI Architecture',
+    'Engineering Leadership',
+    'Cloud Architecture',
+    'Product Engineering',
+    'Frontend Systems',
+    'Microservices',
+    'AI Transformation',
+    'Scalable Systems',
+    'System Design',
+    'AWS Architecture',
+    'DevOps',
+    'LLMOps',
+    'RAG Systems',
+    'AI Engineering',
+  ],
 }
 
 export default function InsightsPage() {

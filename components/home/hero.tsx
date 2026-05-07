@@ -84,8 +84,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-lg lg:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-10"
         >
-          Helping enterprises, startups, and engineering teams build production-grade AI systems
-          using Generative AI, RAG, Multi-Agent Architectures, and AI Engineering best practices.
+          15+ years across enterprise engineering, cloud architecture, and scalable systems —
+          now helping organizations evolve toward AI-native systems and modern technology transformation.
         </motion.p>
 
         {/* CTAs */}
@@ -101,7 +101,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
           >
-            Book Corporate Training
+            Schedule Enterprise Strategy Session
             <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
           </a>
           <a
@@ -117,7 +117,7 @@ export function Hero() {
             href="/trainings"
             className="inline-flex items-center gap-2 px-6 py-3 text-ai-blue font-medium text-sm hover:text-ai-blue/80 transition-colors group"
           >
-            Explore AI Programs
+            Explore Enterprise Programs
             <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
           </Link>
         </motion.div>

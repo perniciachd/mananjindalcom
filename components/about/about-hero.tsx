@@ -5,10 +5,10 @@ import { MapPin, Linkedin, Twitter } from 'lucide-react'
 import Link from 'next/link'
 
 const highlights = [
-  '15+ Years in Software Engineering & AI',
-  'Enterprise, Startup & Government Experience',
-  '3000+ Developers Trained & Mentored',
-  'Generative AI & Multi-Agent Architecture Specialist',
+  '15+ Years Enterprise Engineering & AI',
+  'Full-Stack, Cloud & Architecture Expertise',
+  '3000+ Engineers Trained & Mentored',
+  'Enterprise AI & Systems Transformation',
 ]
 
 export function AboutHero() {
@@ -38,9 +38,10 @@ export function AboutHero() {
               Transformation Catalyst.
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              With over 15 years at the intersection of software engineering, enterprise
-              architecture, and AI, Manan Jindal has spent his career building systems that matter —
-              and now leads organizations into the era of Generative AI.
+              Over the past 15+ years, Manan Jindal has worked across enterprise engineering,
+              full-stack development, cloud systems, architecture, usability engineering, and
+              scalable backend platforms — evolving toward modern Enterprise AI and intelligent
+              systems architecture.
             </p>
 
             <div className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
@@ -86,19 +87,20 @@ export function AboutHero() {
             <div className="p-8 border border-border rounded-lg bg-surface">
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                 Starting as a software engineer working across MNCs, startups, and government
-                ecosystems, Manan built a reputation for engineering excellence and technical
-                leadership. Over a decade and a half, he led critical product initiatives, mentored
-                hundreds of engineers, and architected systems across diverse technology stacks.
+                ecosystems, Manan built deep expertise in full-stack development, enterprise
+                backend systems, cloud architecture, and scalable platforms. Over a decade and a
+                half, he led critical product initiatives, mentored thousands of engineers, and
+                architected systems across diverse technology stacks.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                His deep transition into Generative AI was deliberate and comprehensive — immersing
-                in LLM architectures, RAG systems, multi-agent frameworks, and LLMOps — to emerge
-                as one of the leading voices in enterprise AI transformation.
+                His evolution toward Enterprise AI was a natural progression — applying deep
+                engineering maturity to Generative AI, RAG systems, multi-agent architectures,
+                and LLMOps — positioning him as a leader in AI-native system transformation.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Today, Manan works at the executive level with CTOs, engineering leaders, and
-                innovation teams to design AI strategies, architect production AI systems, and
-                enable organizations to build lasting internal AI capabilities.
+                innovation teams to design technology strategies, architect production systems,
+                and enable organizations to build lasting engineering and AI capabilities.
               </p>
             </div>
 

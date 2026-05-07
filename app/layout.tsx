@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
+import { ThemeProvider } from '@/components/theme-provider'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -20,20 +21,32 @@ export const metadata: Metadata = {
   description:
     'Manan Jindal is an Enterprise GenAI Architect and AI Transformation Consultant with 15+ years of experience. Specializing in RAG systems, multi-agent architectures, corporate AI training, and enterprise AI strategy.',
   keywords: [
+    'Enterprise AI Architect',
+    'AI Transformation Consultant',
+    'AI Engineering Mentor',
+    'Product Engineering Consultant',
+    'AWS Solution Architect',
+    'Enterprise Architecture',
+    'RAG Systems Consultant',
+    'AI Architecture Expert',
+    'Full Stack Architecture',
+    'Enterprise Engineering Leadership',
     'Enterprise GenAI Consultant',
     'AI Architect India',
     'Corporate AI Trainer',
     'GenAI Workshop India',
     'RAG Consultant',
-    'AI Transformation Consultant',
     'Enterprise AI Training',
-    'AI Engineering Mentor',
     'Multi-Agent Systems Consultant',
-    'AI Architecture Expert',
     'Manan Jindal',
     'Generative AI Consulting',
     'LLMOps',
     'AI Product Engineering',
+    'Java Microservices',
+    'React Architecture',
+    'Cloud Architecture',
+    'System Design',
+    'Full Stack Engineering',
   ],
   authors: [{ name: 'Manan Jindal' }],
   creator: 'Manan Jindal',
@@ -100,6 +113,16 @@ export default function RootLayout({
       'AI Engineering',
       'Corporate AI Training',
       'AI Product Engineering',
+      'Full Stack Development',
+      'React & Next.js Architecture',
+      'Java & Microservices',
+      'AWS Cloud Architecture',
+      'System Design',
+      'Enterprise Architecture',
+      'Distributed Systems',
+      'DevOps & CI/CD',
+      'Database Architecture',
+      'Performance Engineering',
     ],
     worksFor: {
       '@type': 'Organization',
@@ -108,15 +131,17 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} bg-background`}>
-      <head>
-        <meta name="google-site-verification" content="OiH8K0j2mpAU1bgz3fN1uq4hvd5BbWo4Csdcoo0O_WM" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
-      <body className="font-sans antialiased">{children}</body>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} bg-background`} suppressHydrationWarning>
+      <body className="font-sans antialiased">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

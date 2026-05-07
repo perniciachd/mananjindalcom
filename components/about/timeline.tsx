@@ -4,42 +4,42 @@ import { motion } from 'framer-motion'
 
 const milestones = [
   {
-    period: '2008 – 2012',
+    period: '2011 – 2015',
     title: 'Engineering Foundations',
     description:
       'Began career in software engineering, building full-stack applications for early-stage startups and mid-sized enterprises. Developed deep expertise in software architecture and agile development methodologies.',
     tags: ['Full-Stack', 'Architecture', 'Agile'],
   },
   {
-    period: '2012 – 2016',
+    period: '2015 – 2019',
     title: 'Enterprise & MNC Experience',
     description:
       'Led engineering initiatives at large MNCs and US/Singapore clients. Architected and delivered mission-critical enterprise systems, managing cross-functional teams and driving technical strategy.',
     tags: ['Enterprise', 'Tech Leadership', 'US Clients', 'Singapore'],
   },
   {
-    period: '2016 – 2020',
+    period: '2019 – 2023',
     title: 'Engineering Leadership & Mentoring',
     description:
       'Grew into senior engineering leadership, overseeing multiple product lines and teams. Started formal mentoring programs, training and upskilling 1000+ developers across organizations.',
     tags: ['Leadership', 'Mentoring', 'Product Engineering'],
   },
   {
-    period: '2020 – 2022',
+    period: '2023 – 2025',
     title: 'Government & Startup Ecosystems',
     description:
       'Extended experience to government digital transformation initiatives and high-growth startups. Built applications from scratch, led technical due diligence, and scaled engineering teams rapidly.',
     tags: ['Government', 'Startups', 'Digital Transformation'],
   },
   {
-    period: '2022 – 2023',
+    period: '2025 – 2026',
     title: 'Deep AI Transition',
     description:
       'Committed fully to Generative AI — immersing in LLM architectures, RAG systems, multi-agent frameworks, prompt engineering, and AI evaluation methodologies. Developed enterprise AI programs.',
     tags: ['GenAI', 'LLMs', 'RAG', 'Multi-Agent'],
   },
   {
-    period: '2023 – Present',
+    period: '2026 – Present',
     title: 'Enterprise GenAI Architect & AI Consultant',
     description:
       'Now working with CTOs, engineering leaders, and enterprises globally to design AI strategies, architect production AI systems, deliver corporate GenAI training, and build lasting AI capabilities.',

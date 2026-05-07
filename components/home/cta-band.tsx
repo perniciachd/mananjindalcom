@@ -29,8 +29,8 @@ export function CTABand() {
             <span className="gradient-text">AI Transformation Journey</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12">
-            Whether you need AI architecture consulting, corporate GenAI training, or hands-on
-            implementation support — {"let's"} design the right AI strategy for your organization.
+            Ready to transform your organization with enterprise AI and modern technology? Let's discuss
+            your strategy, architecture, and implementation roadmap.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -41,7 +41,7 @@ export function CTABand() {
               className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
             >
               <Calendar size={16} />
-              Schedule AI Strategy Call
+              Schedule Enterprise Strategy Session
               <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a

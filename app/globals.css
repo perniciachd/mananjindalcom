@@ -4,7 +4,49 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Dark premium enterprise theme — always dark */
+  /* Light theme */
+  --background: oklch(0.98 0 0);
+  --foreground: oklch(0.15 0.01 255);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0.01 255);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.01 255);
+  --primary: oklch(0.15 0.01 255);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.92 0.01 255);
+  --secondary-foreground: oklch(0.15 0.01 255);
+  --muted: oklch(0.94 0.01 255);
+  --muted-foreground: oklch(0.45 0.01 255);
+  --accent: oklch(0.58 0.18 255);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.90 0.01 255);
+  --input: oklch(0.90 0.01 255);
+  --ring: oklch(0.58 0.18 255);
+  --radius: 0.5rem;
+
+  /* Custom brand tokens */
+  --ai-blue: oklch(0.58 0.18 255);
+  --ai-blue-dim: oklch(0.45 0.14 255);
+  --graphite: oklch(0.30 0.01 255);
+  --silver: oklch(0.45 0.01 255);
+  --surface: oklch(0.96 0.01 255);
+  --surface-elevated: oklch(0.94 0.01 255);
+
+  /* Sidebar */
+  --sidebar: oklch(0.96 0.01 255);
+  --sidebar-foreground: oklch(0.15 0.01 255);
+  --sidebar-primary: oklch(0.58 0.18 255);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.94 0.01 255);
+  --sidebar-accent-foreground: oklch(0.15 0.01 255);
+  --sidebar-border: oklch(0.90 0.01 255);
+  --sidebar-ring: oklch(0.58 0.18 255);
+}
+
+.dark {
+  /* Dark premium enterprise theme */
   --background: oklch(0.08 0.01 255);
   --foreground: oklch(0.96 0 0);
   --card: oklch(0.11 0.012 255);
@@ -107,6 +149,12 @@
   background-size: 60px 60px;
 }
 
+.light .grid-overlay {
+  background-image:
+    linear-gradient(oklch(0.90 0.01 255 / 0.4) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.90 0.01 255 / 0.4) 1px, transparent 1px);
+}
+
 /* Glow effects */
 .glow-blue {
   box-shadow: 0 0 40px oklch(0.58 0.18 255 / 0.15);
@@ -119,6 +167,13 @@
 /* Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, oklch(0.96 0 0) 0%, oklch(0.58 0.18 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.light .gradient-text {
+  background: linear-gradient(135deg, oklch(0.15 0.01 255) 0%, oklch(0.58 0.18 255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -25,7 +25,7 @@ export function ContactInfo() {
       className="space-y-8"
     >
       <motion.div variants={itemVariants}>
-        <h3 className="text-sm font-semibold text-secondary uppercase tracking-wide mb-2">
+        <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-2">
           Email
         </h3>
         <a
@@ -37,7 +37,7 @@ export function ContactInfo() {
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <h3 className="text-sm font-semibold text-secondary uppercase tracking-wide mb-2">
+        <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-2">
           Phone
         </h3>
         <a
@@ -46,11 +46,11 @@ export function ContactInfo() {
         >
           +91-9501-5659-55
         </a>
-        <p className="text-sm text-secondary mt-1">WhatsApp: +91-9501-5659-55</p>
+        <p className="text-sm text-muted-foreground mt-1">WhatsApp: +91-9501-5659-55</p>
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <h3 className="text-sm font-semibold text-secondary uppercase tracking-wide mb-4">
+        <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-4">
           Connect
         </h3>
         <div className="flex gap-4">
@@ -58,7 +58,7 @@ export function ContactInfo() {
             href="https://linkedin.com/in/mananjindal"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-secondary hover:text-accent transition-colors"
+            className="text-muted-foreground hover:text-accent transition-colors"
             aria-label="LinkedIn"
           >
             LinkedIn
@@ -67,7 +67,7 @@ export function ContactInfo() {
             href="https://twitter.com/MananJindal18"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-secondary hover:text-accent transition-colors"
+            className="text-muted-foreground hover:text-accent transition-colors"
             aria-label="Twitter"
           >
             Twitter
@@ -76,7 +76,7 @@ export function ContactInfo() {
             href="https://wa.me/919501565955"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-secondary hover:text-accent transition-colors"
+            className="text-muted-foreground hover:text-accent transition-colors"
             aria-label="WhatsApp"
           >
             WhatsApp
@@ -85,7 +85,7 @@ export function ContactInfo() {
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-secondary hover:text-accent transition-colors"
+            className="text-muted-foreground hover:text-accent transition-colors"
             aria-label="GitHub"
           >
             GitHub
@@ -94,10 +94,10 @@ export function ContactInfo() {
       </motion.div>
 
       <motion.div variants={itemVariants} className="pt-8 border-t border-border">
-        <h3 className="text-sm font-semibold text-secondary uppercase tracking-wide mb-3">
+        <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-3">
           Response Time
         </h3>
-        <p className="text-sm text-secondary leading-relaxed">
+        <p className="text-sm text-muted-foreground leading-relaxed">
           Enterprise consulting inquiries: <span className="text-accent font-medium">24 hours</span>
           <br />
           Training program requests: <span className="text-accent font-medium">48 hours</span>
@@ -107,10 +107,10 @@ export function ContactInfo() {
       </motion.div>
 
       <motion.div variants={itemVariants} className="pt-8 border-t border-border">
-        <h3 className="text-sm font-semibold text-secondary uppercase tracking-wide mb-3">
+        <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-3">
           Timezone
         </h3>
-        <p className="text-sm text-secondary">
+        <p className="text-sm text-muted-foreground">
           Pacific Time (PT) / GMT-8 (or GMT-7 during DST)
         </p>
       </motion.div>

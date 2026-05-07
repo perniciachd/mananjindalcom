@@ -5,6 +5,21 @@ import { CheckCircle } from 'lucide-react'
 
 const caseStudies = [
   {
+    industry: 'Aviation',
+    title: 'Oman Airports - AI-Driven Airport Operations Transformation',
+    challenge:
+      'Oman Airports manages multiple airports across Oman with complex operational challenges: passenger flow optimization, real-time decision-making, and legacy system integration. Manual processes caused delays and reduced operational efficiency.',
+    solution:
+      'Architected an AI-driven operations platform integrating real-time data from flight systems, security checkpoints, and passenger flow sensors. Implemented predictive analytics for resource allocation, automated incident response, and unified dashboard for airport management.',
+    stack: ['Azure AI', 'Python', 'Kafka', 'PostgreSQL', 'React', 'Power BI'],
+    outcomes: [
+      '35% improvement in passenger throughput during peak hours',
+      'Real-time incident response time reduced from 45 minutes to 8 minutes',
+      'Predictive resource allocation reduced staffing costs by 18%',
+      'Unified operational visibility across 4 airports',
+    ],
+  },
+  {
     industry: 'FinTech',
     title: 'Enterprise AI Support Assistant',
     challenge:

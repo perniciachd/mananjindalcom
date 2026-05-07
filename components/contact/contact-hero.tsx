@@ -14,7 +14,7 @@ export function ContactHero() {
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 text-balance">
             Let&apos;s Transform Your Enterprise
           </h1>
-          <p className="text-xl text-secondary max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Whether you&apos;re exploring GenAI possibilities or ready to implement a full-scale transformation, 
             I&apos;m here to guide you through every step.
           </p>

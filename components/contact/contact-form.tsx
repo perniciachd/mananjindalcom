@@ -29,7 +29,7 @@ export function ContactForm() {
         className="bg-accent/10 border border-accent rounded-lg p-8 text-center"
       >
         <h3 className="text-2xl font-semibold text-accent mb-2">Thank you!</h3>
-        <p className="text-secondary">
+        <p className="text-muted-foreground">
           I&apos;ve received your message and will get back to you within 24 hours.
         </p>
       </motion.div>
@@ -126,7 +126,7 @@ export function ContactForm() {
           {loading ? 'Sending...' : 'Send Message'}
         </button>
 
-        <p className="text-xs text-secondary text-center">
+        <p className="text-xs text-muted-foreground text-center">
           I&apos;ll respond to enterprise inquiries within 24 hours. For urgent matters, call me directly.
         </p>
       </form>

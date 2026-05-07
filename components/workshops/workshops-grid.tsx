@@ -91,21 +91,21 @@ export function WorkshopsGrid() {
                   <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-accent transition-colors">
                     {workshop.title}
                   </h3>
-                  <p className="text-secondary text-sm mb-4">{workshop.description}</p>
+                  <p className="text-muted-foreground text-sm mb-4">{workshop.description}</p>
                   
                   <div className="space-y-3 mb-4">
                     <div>
-                      <p className="text-xs text-secondary uppercase tracking-wide">Duration</p>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide">Duration</p>
                       <p className="text-sm text-foreground">{workshop.duration}</p>
                     </div>
                     <div>
-                      <p className="text-xs text-secondary uppercase tracking-wide">Best For</p>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide">Best For</p>
                       <p className="text-sm text-foreground">{workshop.audience}</p>
                     </div>
                   </div>
 
                   <div>
-                    <p className="text-xs text-secondary uppercase tracking-wide mb-2">Topics Covered</p>
+                    <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">Topics Covered</p>
                     <div className="flex flex-wrap gap-2">
                       {workshop.topics.map((topic) => (
                         <span
