@@ -258,7 +258,7 @@ export function ResponsibleAIContent() {
       </section>
 
       {/* WHO THIS IS FOR SECTION */}
-      <section className="py-24 lg:py-32 border-t border-border">
+      <section id="audiences" className="scroll-mt-20 py-24 lg:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -386,7 +386,7 @@ export function ResponsibleAIContent() {
       </section>
 
       {/* LEARNING OUTCOMES SECTION */}
-      <section className="py-24 lg:py-32 border-t border-border">
+      <section id="what-youll-walk-away-with" className="scroll-mt-20 py-24 lg:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -419,7 +419,7 @@ export function ResponsibleAIContent() {
       </section>
 
       {/* 3-DAY CURRICULUM SECTION */}
-      <section className="py-24 lg:py-32 border-t border-border">
+      <section id="curriculum" className="scroll-mt-20 py-24 lg:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -528,7 +528,7 @@ export function ResponsibleAIContent() {
       </section>
 
       {/* METHODOLOGY SECTION */}
-      <section className="py-24 lg:py-32 border-t border-border">
+      <section id="methodology" className="scroll-mt-20 py-24 lg:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -607,7 +607,7 @@ export function ResponsibleAIContent() {
       </section>
 
       {/* DELIVERY FORMATS SECTION */}
-      <section className="py-24 lg:py-32 border-t border-border">
+      <section id="formats" className="scroll-mt-20 py-24 lg:py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -640,7 +640,7 @@ export function ResponsibleAIContent() {
       </section>
 
       {/* FAQ SECTION */}
-      <section className="py-24 lg:py-32 border-t border-border">
+      <section id="faq" className="scroll-mt-20 py-24 lg:py-32 border-t border-border">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
