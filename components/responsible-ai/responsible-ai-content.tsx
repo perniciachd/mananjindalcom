@@ -3,6 +3,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { motion } from 'framer-motion'
 import { ArrowRight, Check, MessageCircle, Calendar, Shield, AlertTriangle, Users, BookOpen, Target, Zap, Clock, Globe, Building2, GraduationCap } from 'lucide-react'
+import { trackEvent } from '@/lib/analytics'
 
 const problemCards = [
   {
@@ -185,11 +186,10 @@ export function ResponsibleAIContent() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
               onClick={() => {
-                if (typeof window !== 'undefined' && (window as any).gtag) {
-                  (window as any).gtag('event', 'request_proposal_click', {
-                    page: 'responsible_ai_training',
-                  })
-                }
+                trackEvent('request_proposal_click', {
+                  page: 'responsible_ai_training',
+                  location: 'hero',
+                })
               }}
             >
               Request a Proposal
@@ -201,11 +201,10 @@ export function ResponsibleAIContent() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-border text-foreground font-medium rounded-md text-sm hover:bg-secondary transition-colors group"
               onClick={() => {
-                if (typeof window !== 'undefined' && (window as any).gtag) {
-                  (window as any).gtag('event', 'whatsapp_enquiry_click', {
-                    page: 'responsible_ai_training',
-                  })
-                }
+                trackEvent('whatsapp_enquiry_click', {
+                  page: 'responsible_ai_training',
+                  location: 'hero',
+                })
               }}
             >
               <MessageCircle size={16} className="text-green-400" />
@@ -710,11 +709,10 @@ export function ResponsibleAIContent() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
                 onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).gtag) {
-                    (window as any).gtag('event', 'request_proposal_click', {
-                      page: 'responsible_ai_training',
-                    })
-                  }
+                  trackEvent('request_proposal_click', {
+                    page: 'responsible_ai_training',
+                    location: 'final_cta',
+                  })
                 }}
               >
                 <Calendar size={16} />
@@ -727,11 +725,10 @@ export function ResponsibleAIContent() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 border border-border text-foreground font-medium rounded-md text-sm hover:bg-secondary transition-colors group"
                 onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).gtag) {
-                    (window as any).gtag('event', 'whatsapp_enquiry_click', {
-                      page: 'responsible_ai_training',
-                    })
-                  }
+                  trackEvent('whatsapp_enquiry_click', {
+                    page: 'responsible_ai_training',
+                    location: 'final_cta',
+                  })
                 }}
               >
                 <MessageCircle size={16} className="text-green-400" />
