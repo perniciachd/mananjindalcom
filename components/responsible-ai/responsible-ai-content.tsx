@@ -181,7 +181,7 @@ export function ResponsibleAIContent() {
             className="flex flex-col sm:flex-row gap-4 mb-12"
           >
             <a
-              href="https://cal.com/mananjindal/training"
+              href="https://cal.com/mananjindal/responsible-ai"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
@@ -704,7 +704,7 @@ export function ResponsibleAIContent() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <a
-                href="https://cal.com/mananjindal/training"
+                href="https://cal.com/mananjindal/responsible-ai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
