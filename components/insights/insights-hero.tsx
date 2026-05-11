@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { ExternalLink } from 'lucide-react'
 
 const categories = [
-  'All', 'GenAI Architecture', 'RAG Systems', 'AI Agents', 'LLMOps',
+  'All', 'GenAI Architecture', 'RAG Systems', 'AI Agents', 'LLMOps', 'Responsible AI', 'AI Governance',
   'Enterprise AI', 'AI Strategy', 'AI Safety',
 ]
 

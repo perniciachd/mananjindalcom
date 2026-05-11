@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/trainings', label: 'AI Trainings' },
+  { href: '/responsible-ai-training', label: 'Responsible AI' },
   { href: '/consulting', label: 'Consulting' },
   { href: '/architecture', label: 'GenAI Architecture' },
   { href: '/insights', label: 'Insights' },

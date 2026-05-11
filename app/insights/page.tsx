@@ -25,6 +25,8 @@ export const metadata = {
     'LLMOps',
     'RAG Systems',
     'AI Engineering',
+    'Responsible AI',
+    'AI Governance',
   ],
 }
 

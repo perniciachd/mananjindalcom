@@ -41,6 +41,8 @@ export const metadata: Metadata = {
     'Manan Jindal',
     'Generative AI Consulting',
     'LLMOps',
+    'Responsible AI',
+    'AI Governance',
     'AI Product Engineering',
     'Java Microservices',
     'React Architecture',
@@ -123,6 +125,8 @@ export default function RootLayout({
       'DevOps & CI/CD',
       'Database Architecture',
       'Performance Engineering',
+      'Responsible AI',
+      'AI Governance',
     ],
     worksFor: {
       '@type': 'Organization',

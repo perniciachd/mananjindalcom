@@ -26,7 +26,7 @@ const pillars = [
   {
     number: '05',
     title: 'Scale & Operate',
-    items: ['LLMOps setup', 'Monitoring', 'Team enablement', 'Continuous improvement'],
+    items: ['LLMOps setup', 'Monitoring', 'Team enablement', 'Responsible AI & AI Governance', 'Continuous improvement'],
   },
 ]
 

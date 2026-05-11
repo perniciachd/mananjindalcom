@@ -28,7 +28,7 @@ const modules = [
   {
     day: 'Day 5',
     title: 'Deployment, Safety & Capstone',
-    topics: ['LLMOps & monitoring', 'AI safety practices', 'Production deployment', 'Evaluation pipelines', 'Capstone project'],
+    topics: ['LLMOps & monitoring', 'AI safety practices', 'Responsible AI & AI Governance', 'Production deployment', 'Evaluation pipelines', 'Capstone project'],
   },
 ]
 

@@ -19,7 +19,7 @@ const approaches = [
   {
     icon: TrendingUp,
     title: 'Modern Engineering for AI-Native Organizations',
-    description: 'AI-native organizations need modern engineering practices: CI/CD for ML models, LLMOps pipelines, observability for AI systems, and automated evaluation frameworks.',
+    description: 'AI-native organizations need modern engineering practices: CI/CD for ML models, LLMOps pipelines, observability for AI systems, automated evaluation frameworks, and responsible AI governance.',
     insight: 'Building AI-native systems requires evolving engineering practices—not just adding AI tools to existing processes.'
   },
   {

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const topics = [
   {
     title: 'LLMOps',
-    desc: 'Production ML operations for LLM-based systems — model versioning, A/B testing, prompt management, cost optimization, and continuous evaluation.',
+    desc: 'Production ML operations for LLM-based systems — model versioning, A/B testing, prompt management, cost optimization, continuous evaluation, and responsible AI governance.',
     tags: ['MLflow', 'LangSmith', 'Arize', 'CI/CD'],
   },
   {
@@ -17,6 +17,11 @@ const topics = [
     title: 'AI Safety & Alignment',
     desc: 'Enterprise AI safety practices: output filtering, content moderation, PII detection, prompt injection prevention, and responsible AI governance frameworks.',
     tags: ['Guardrails AI', 'NeMo', 'RLHF', 'Red-teaming'],
+  },
+  {
+    title: 'Responsible AI & AI Governance',
+    desc: 'Enterprise AI governance frameworks including ethical AI guidelines, bias detection and mitigation, compliance with regulations (EU AI Act, GDPR), transparency requirements, and accountability structures.',
+    tags: ['Ethics', 'Compliance', 'Risk Management', 'Policy'],
   },
   {
     title: 'AI Evaluation Pipelines',
