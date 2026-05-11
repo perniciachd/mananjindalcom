@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Linkedin, Twitter, Mail, ExternalLink, FileText } from 'lucide-react'
 
-const footerLinks = {
+const defaultFooterLinks = {
   Services: [
     { label: 'Enterprise AI Trainings', href: '/trainings' },
     { label: 'AI Consulting', href: '/consulting' },
@@ -22,7 +22,11 @@ const footerLinks = {
   ],
 }
 
-export function Footer() {
+interface FooterProps {
+  customExpertiseLinks?: Array<{ label: string; href: string }>
+}
+
+export function Footer({ customExpertiseLinks }: FooterProps = {}) {
   return (
     <footer className="border-t border-border bg-background">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-8">
@@ -78,13 +82,16 @@ export function Footer() {
           </div>
 
           {/* Links */}
-          {Object.entries(footerLinks).map(([section, links]) => (
+          {Object.entries({
+            ...defaultFooterLinks,
+            ...(customExpertiseLinks ? { Expertise: customExpertiseLinks } : {}),
+          }).map(([section, links]) => (
             <div key={section}>
               <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
                 {section}
               </h4>
               <ul className="space-y-3">
-                {links.map((link) => (
+                {links.map((link: { label: string; href: string }) => (
                   <li key={link.label}>
                     <Link
                       href={link.href}

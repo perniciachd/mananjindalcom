@@ -159,9 +159,18 @@ export function ResponsibleAIContent() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed mb-10"
+            className="text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed mb-6"
           >
             A 3-day hands-on training program that helps your teams use AI to work smarter — while protecting data, ensuring compliance, and keeping human judgment at the centre of every decision.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.25 }}
+            className="text-base italic text-ai-blue mb-8"
+          >
+            Limited cohorts per quarter. Q1 2026 slots are filling now.
           </motion.p>
 
           <motion.div
@@ -175,6 +184,13 @@ export function ResponsibleAIContent() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'request_proposal_click', {
+                    page: 'responsible_ai_training',
+                  })
+                }
+              }}
             >
               Request a Proposal
               <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
@@ -184,6 +200,13 @@ export function ResponsibleAIContent() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-border text-foreground font-medium rounded-md text-sm hover:bg-secondary transition-colors group"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'whatsapp_enquiry_click', {
+                    page: 'responsible_ai_training',
+                  })
+                }
+              }}
             >
               <MessageCircle size={16} className="text-green-400" />
               WhatsApp Enquiry
@@ -276,6 +299,90 @@ export function ResponsibleAIContent() {
           >
             No technical background required. The program is designed for decision-makers and end-users, not engineers.
           </motion.p>
+        </div>
+      </section>
+
+      {/* WHAT I'VE BEEN SEEING SECTION */}
+      <section className="py-24 lg:py-32 border-t border-border">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="max-w-3xl mb-6"
+          >
+            <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-balance mb-4 leading-tight">
+              What I've Been Seeing
+            </h2>
+            <p className="text-base italic text-muted-foreground">
+              Patterns I've personally observed while architecting AI systems for enterprises, government departments, and academic institutions.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="max-w-3xl mb-8"
+          >
+            <p className="text-lg text-foreground leading-relaxed">
+              A few months ago, I started noticing the same thing happening across very different organizations. The behaviour was always well-intentioned. The risk was always serious.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="max-w-3xl mb-8 space-y-4"
+          >
+            {[
+              'A finance manager pasting a confidential P&L into ChatGPT to "improve the summary"',
+              'An HR executive uploading employee names and salaries to generate a "compensation analysis"',
+              'A customer-service team copy-pasting AI replies directly to clients — without reading them',
+              'A government officer drafting an internal note containing citizen data in a free AI tool',
+              'A faculty member uploading student assignments to ChatGPT to ask for "grading suggestions"',
+            ].map((scenario, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 + i * 0.05 }}
+                className="flex items-start gap-3 pl-4"
+              >
+                <ArrowRight className="w-5 h-5 text-ai-blue shrink-0 mt-0.5" />
+                <p className="text-sm text-foreground leading-relaxed">{scenario}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+            className="max-w-3xl mb-8"
+          >
+            <p className="text-lg italic text-ai-blue leading-relaxed">
+              None of these people were being careless. They were trying to be productive. But every single one of these moments is a data leak waiting to happen, a compliance breach in slow motion, or a reputational risk one screenshot away from a headline.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            className="text-center"
+          >
+            <p className="text-xl font-semibold text-foreground">
+              The gap isn't intent. It's training.
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -582,9 +689,19 @@ export function ResponsibleAIContent() {
               <br />
               <span className="gradient-text">Responsible AI</span> to Your Organization?
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-6">
               Whether you're rolling out AI tools company-wide, preparing your faculty for an AI-enabled future, or building governance frameworks for public-sector adoption — this program gives your people the practical, ethical, and strategic foundation they need.
             </p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-base italic text-ai-blue mb-8"
+            >
+              Limited cohorts per quarter. Q1 2026 slots are filling now.
+            </motion.p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <a
@@ -592,6 +709,13 @@ export function ResponsibleAIContent() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background font-semibold rounded-md text-sm hover:bg-foreground/90 transition-colors group"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'request_proposal_click', {
+                      page: 'responsible_ai_training',
+                    })
+                  }
+                }}
               >
                 <Calendar size={16} />
                 Request a Proposal
@@ -602,6 +726,13 @@ export function ResponsibleAIContent() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 border border-border text-foreground font-medium rounded-md text-sm hover:bg-secondary transition-colors group"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'whatsapp_enquiry_click', {
+                      page: 'responsible_ai_training',
+                    })
+                  }
+                }}
               >
                 <MessageCircle size={16} className="text-green-400" />
                 WhatsApp Enquiry
