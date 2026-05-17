@@ -15,11 +15,11 @@ const sections = [
         date: 'Apr 2025',
       },
       {
-        title: 'LLMOps: What You Actually Need in Production',
-        desc: 'Cut through the noise — what observability, evaluation, and deployment infrastructure you genuinely need for enterprise LLM applications.',
-        category: 'LLMOps',
-        readTime: '8 min',
-        date: 'Apr 2025',
+        title: 'Five Minutes to Diagnose a 401: A Production AI Reliability Story',
+        desc: 'How refusing to retry an authentication error turned a 30-minute outage into a 5-minute fix. A production incident from a finance compliance tool, and the retry policy that made fast diagnosis possible.',
+        category: 'AI Reliability',
+        readTime: '6 min',
+        date: 'May 2026',
       },
       {
         title: 'Enterprise AI Safety: Beyond Basic Guardrails',
@@ -97,7 +97,7 @@ export function ArticleGrid() {
               {section.articles.map((article, i) => (
                 <motion.a
                   key={article.title}
-                  href="https://medium.com"
+                  href="https://medium.com/@manan_jindal/five-minutes-to-diagnose-a-401-a-production-ai-reliability-story-1ded1ac75c46"
                   target="_blank"
                   rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 20 }}
